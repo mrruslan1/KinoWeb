@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/actors.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="shortcut icon" href="icons/logo.svg" type="image/x-icon">
+    <title>Актеры</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+
+            <div class="header__wrapper">
+
+                <a href="#" class="header__logo">
+                    <img src="icons/logo.svg" alt="header-logo" class="logo" width="50">
+                </a>
+
+                <nav class="header__menu">
+                    <img src="icons/burger.svg" alt="" class="header__menu-burger">
+                    <ul class="header__menu-list">
+
+                        <li class="header__menu-item">
+                            <a href="index.html" class="header__menu-link">Список фильмов</a>
+                        </li>
+
+                        <li class="header__menu-item">
+                            <a href="top250.html" class="header__menu-link">Топ 250</a>
+                        </li>
+
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">О Платформе</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <a href="#" class="header__cta">Подписаться</a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="actors">
+            <div class="container">
+                <h1 class="actors__title">Актеры фильма</h1>
+                <div class="actors__list"></div>
+            </div>
+        </section>
+
+
+        <div class="actors__modal">
+            <div class="actors__modal-content">
+                <button class="actors__modal-close">X</button>
+
+                <div class="actors__modal-info">
+                    <div class="actor__modal_photo-wrap">
+                        <img src="" alt="" class="actor__modal_photo">
+                    </div>
+
+                    <div class="actor__modal-text">
+                        <h2 class="actor__modal-name"></h2>
+                        <p>Дата Рождения: <span class="actor__modal-birthday"></span></p>
+                        <p>Место Рождения: <span class="actor__modal-birthplace"></span></p>
+                        <h3>Биография</h3>
+                        <p class="actor__modal-bio"></p>
+                        <h3>Фильмография</h3>
+                        <ul class="actor__modal-films"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper-top">
+
+                <a href="#" class="footer__logo">
+                    <img src="icons/logo.svg" alt="" class="footer__logo-img">
+                </a>
+
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a href="index.html" class="footer__menu-link">Список фильмов</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="top250.html" class="footer__menu-link">Топ 250</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">О Платформе</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer__contacts">
+                    <a href="mailto:mymail@mail.ru" class="footer__contacts-item">mymail@mail.ru</a>
+                    <a href="tel:88005553535" class="footer__contacts-item">8-800-555-35-35</a>
+                    <a href="#" class="footer__contacts-item">
+                        <img src="icons/vk.svg" alt="" width="53" height="30">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer__wrapper-bottom">
+                <a href="#" class="footer__politic">Политика конфиденциальности</a>
+                <p class="footer__copyright">kinosait© 2026</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/api.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/actors.js"></script>
+</body>
+
+</html>

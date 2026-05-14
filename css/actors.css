@@ -1,0 +1,108 @@
+.actors {
+    padding: 40px 0;
+}
+
+.actors__title {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.actors__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 270px);
+    gap: 30px;
+    justify-content: center;
+}
+
+.actor-card {
+    border-radius: 18px;
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.actor__card_photo {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.actor__card-content {
+    padding: 15px;
+}
+
+.actor__card-name {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Модальное окно */
+.actors__modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.789);
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    display: none;
+}
+
+.actors__modal.active {
+    display: flex;
+}
+
+.actors__modal-content {
+    position: relative;
+    max-width: 900px;
+    width: 90%;
+    max-height: 85vh;
+    background-color: #fff;
+    border-radius: 18px;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.actors__modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.actors__modal-info {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 30px;
+}
+
+.actor__modal_photo-wrap {
+    border-radius: 18px;
+}
+
+.actor__modal_photo {
+    width: 100%;
+    height: auto;
+}
+
+.actor__modal-name {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.actor__modal-text p {
+    margin-bottom: 15px;
+
+}
+.actor__modal-bio {
+    line-height: 1.5;
+}
+
+
+.actor__modal-films li {
+    padding: 5px 0;
+    border-bottom: 1px solid var(--accent-color);
+}

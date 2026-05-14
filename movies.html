@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница фильма</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/movie.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="shortcut icon" href="icons/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+
+            <div class="header__wrapper">
+
+                <a href="index.html" class="header__logo">
+                    <img src="icons/logo.svg" alt="header-logo" class="logo" width="50">
+                </a>
+
+                <nav class="header__menu">
+                    <img src="icons/burger.svg" alt="" class="header__menu-burger">
+                    <ul class="header__menu-list">
+
+                        <li class="header__menu-item">
+                            <a href="index.html" class="header__menu-link">Список фильмов</a>
+                        </li>
+
+                        <li class="header__menu-item">
+                            <a href="top250.html" class="header__menu-link">Топ 250</a>
+                        </li>
+
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">О Платформе</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <a href="#" class="header__cta">Подписаться</a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="movie__detail">
+
+            <div class="container">
+
+                <h1 class="movie__detail-title title"></h1>
+
+                <div class="movie__detail-content">
+
+                    <img src="" alt="" class="movie__detail-poster">
+
+                    <div class="movie__detail-info">
+                        <p class="movie__detail-desc"></p>
+                        <p class="movie__detail-genres"></p>
+
+                        <div class="movie__detail-facts">
+
+                            <div class="movie__detail-facts-item">
+                                <h3 class="movie__detail-facts-title">Год выпуска</h3>
+                                <p class="movie__detail-facts-text year"></p>
+                            </div>
+
+                            <div class="movie__detail-facts-item">
+                                <h3 class="movie__detail-facts-title">Возраст</h3>
+                                <p class="movie__detail-facts-text age"></p>
+                            </div>
+
+                            <div class="movie__detail-facts-item">
+                                <h3 class="movie__detail-facts-title">Длительность</h3>
+                                <p class="movie__detail-facts-text timing"></p>
+                            </div>
+
+                            <div class="movie__detail-facts-item">
+                                <h3 class="movie__detail-facts-title">Рейтинг</h3>
+                                <p class="movie__detail-facts-text rating"></p>
+                            </div>
+                        </div>
+
+                        <div class="movie__detail-stars"></div>
+                        <div class="movie__detail-actors">
+                            <h3 class="movie__detail-actors-title">Актерский состав</h3>
+                            <ul class="movie__detail-actors-list"></ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper-top">
+
+                <a href="index.html" class="footer__logo">
+                    <img src="icons/logo.svg" alt="" class="footer__logo-img">
+                </a>
+
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a href="index.html" class="footer__menu-link">Список фильмов</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="top250.html" class="footer__menu-link">Топ 250</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">О Платформе</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer__contacts">
+                    <a href="mailto:mymail@mail.ru" class="footer__contacts-item">mymail@mail.ru</a>
+                    <a href="tel:88005553535" class="footer__contacts-item">8-800-555-35-35</a>
+                    <a href="#" class="footer__contacts-item">
+                        <img src="icons/vk.svg" alt="" width="53" height="30">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer__wrapper-bottom">
+                <a href="#" class="footer__politic">Политика конфиденциальности</a>
+                <p class="footer__copyright">kinosait© 2026</p>
+            </div>
+        </div>
+    </footer>
+
+
+     <script src="js/api.js"></script>
+     <script src="js/burger.js"></script>
+    <script src="js/movie.js"></script>
+</body>
+
+</html>
+
